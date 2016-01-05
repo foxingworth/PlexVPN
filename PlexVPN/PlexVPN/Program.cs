@@ -76,8 +76,7 @@ namespace PlexVPN
                 if (result.Count > 0 && result.First().StartsWith("The requested operation requires elevation."))
                 {
                     Console.WriteLine("failed!\nPlease run this application as an administrator.");
-                    System.Threading.Thread.Sleep(5000);
-                    return;
+                    Console.ReadLine();
                 }
             }
             Console.WriteLine("done!");
